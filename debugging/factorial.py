@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import sys
 
+
 def factorial(n):
     result = 1
     while n > 1:
@@ -8,6 +9,7 @@ def factorial(n):
         n -= 1
     return result
 
-f = factorial(int(sys.argv[1]))
-print(f)
 
+if len(sys.argv) > 1:
+    f = factorial(int(sys.argv[1]))
+    print(f)
